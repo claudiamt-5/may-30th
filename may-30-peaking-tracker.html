@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>May 30 Peaking Tracker - Wrist & Power Optimized</title>
+<title>May 30 Peaking Tracker - Full 3 Weeks</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
   :root {
@@ -103,7 +103,7 @@
   }
 
   tr.highlight {
-    background: rgba(96, 165, 250, 0.06);
+    background: rgba(30, 58, 138, 0.35);
   }
 
   input,
@@ -187,26 +187,29 @@
     margin-top: 8px;
   }
 
-  .flex-row {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
   .full-width {
     width: 100%;
   }
 
-  .grid-2 {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
+  .week-header {
+    margin: 40px 0 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #1e3a8a;
+  }
+
+  .week-header h2 {
+    font-size: 1.4rem;
+    color: #93c5fd;
+  }
+
+  .week-header p {
+    margin: 6px 0 0;
+    color: #94a3b8;
+    font-size: 0.9rem;
   }
 
   @media (max-width: 900px) {
-    .hero,
-    .grid-2 {
+    .hero {
       grid-template-columns: 1fr;
     }
 
@@ -254,8 +257,8 @@
     <div class="hero">
       <div class="info">
         <h1>May 30 Competition Peaking Tracker</h1>
-        <p><strong>Your PRs:</strong> Clean 135 lbs | Bench 125 lbs | Deadlift 225 lbs</p>
-        <p><strong>Notes:</strong> Right wrist 4-5/10 on catch • Use hook grip • Focus on left-side triple extension</p>
+        <p><strong>PRs:</strong> Clean 135 lbs | Bench 125 lbs | Deadlift 225 lbs</p>
+        <p><strong>Key Notes:</strong> Hook grip on cleans &bull; Right wrist protection &bull; Emphasize left leg drive &amp; triple extension</p>
       </div>
       <aside class="sidebar box calc">
         <h2>1RM % Calculator</h2>
@@ -274,216 +277,665 @@
   </header>
 
   <section class="section note">
-    <strong>Wrist Warm-up (Do Every Lower Session):</strong>
-    <p>Wrist circles, prayer stretch, band flex/ext × 5-8 min</p>
+    <strong>Wrist Warm-up (Every Lower/Pulling Session):</strong>
+    <p>Wrist circles, prayer stretch, band flex/ext &mdash; 5&ndash;8 min before every clean or lower day</p>
   </section>
 
+  <!-- WEEK 1 -->
+  <div class="week-header">
+    <h2>Week 1 &ndash; Volume &amp; Technique Base</h2>
+    <p>Focus: Establish movement quality, accumulate work, identify weaknesses. Intensity ~70&ndash;80% 1RM.</p>
+  </div>
+
   <section class="section box">
-    <h2>Week 1 – Day 1 (Lower + Clean Power) - Updated</h2>
+    <h2>Week 1 &ndash; Day 1: Lower + Clean Power</h2>
     <table>
-      <tr>
-        <th>Exercise</th>
-        <th>Sets × Reps</th>
-        <th>Tempo & Rest</th>
-        <th>Weight (lbs)</th>
-        <th>Reps Done</th>
-        <th>RPE</th>
-        <th>Notes</th>
-      </tr>
-      <tr class="highlight">
-        <td>Wrist Mobility + Forearm Warm-up</td>
-        <td>1 set</td>
-        <td>5-8 min</td>
-        <td>—</td>
-        <td>—</td>
-        <td>—</td>
-        <td><input type="text" placeholder="Session notes"></td>
-      </tr>
-      <tr class="highlight">
-        <td>Front Squat (Cross-arm grip recommended)</td>
-        <td>4 × 4-6</td>
-        <td>2-1-X • 2-3 min<br>Focus on fast ascent</td>
-        <td><input type="number" placeholder="lbs"></td>
-        <td><input type="number" placeholder="reps"></td>
-        <td><input type="number" min="1" max="10" placeholder="RPE"></td>
-        <td><input type="text" placeholder="notes"></td>
-      </tr>
-      <tr class="highlight">
-        <td>Hang Cleans (Hook grip) – EXPLOSIVE</td>
-        <td>5-6 × 2-3</td>
-        <td>X-X-X • 2.5-4 min<br>Fast elbows + left triple extension</td>
-        <td><input type="number" placeholder="lbs"></td>
-        <td><input type="number" placeholder="reps"></td>
-        <td><input type="number" min="1" max="10" placeholder="RPE"></td>
-        <td><input type="text" placeholder="notes"></td>
-      </tr>
-      <tr>
-        <td>Deadlift (moderate)</td>
-        <td>4 × 3-5</td>
-        <td>Controlled down, Explosive up • 3-5 min</td>
-        <td><input type="number" placeholder="lbs"></td>
-        <td><input type="number" placeholder="reps"></td>
-        <td><input type="number" min="1" max="10" placeholder="RPE"></td>
-        <td><input type="text" placeholder="notes"></td>
-      </tr>
-      <tr>
-        <td>Romanian DL / Good Mornings</td>
-        <td>3 × 6-8</td>
-        <td>3-1-X • 2 min</td>
-        <td><input type="number" placeholder="lbs"></td>
-        <td><input type="number" placeholder="reps"></td>
-        <td><input type="number" min="1" max="10" placeholder="RPE"></td>
-        <td><input type="text" placeholder="notes"></td>
-      </tr>
-      <tr>
-        <td>Power Asymmetry Drill (Single-leg box jumps or split stance med ball slams – each side)</td>
-        <td>3 × 5</td>
-        <td>Explosive • 1-2 min</td>
-        <td>Bodyweight or light</td>
-        <td><input type="number" placeholder="reps"></td>
-        <td>—</td>
-        <td><input type="text" placeholder="notes"></td>
-      </tr>
-      <tr>
-        <td>Core</td>
-        <td>3 sets</td>
-        <td>— • 1-2 min</td>
-        <td>—</td>
-        <td>—</td>
-        <td>—</td>
-        <td><input type="text" placeholder="notes"></td>
-      </tr>
+      <thead>
+        <tr>
+          <th>Exercise</th>
+          <th>Sets &times; Reps</th>
+          <th>Tempo &amp; Rest</th>
+          <th>Weight (lbs)</th>
+          <th>Reps Done</th>
+          <th>RPE</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight">
+          <td>Wrist Mobility Warm-up</td>
+          <td>1 set</td>
+          <td>5&ndash;8 min</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td><input type="text" placeholder="session notes"></td>
+        </tr>
+        <tr class="highlight">
+          <td>Front Squat (Cross-arm grip)</td>
+          <td>4 &times; 4&ndash;6</td>
+          <td>2-1-X &bull; 2&ndash;3 min<br>Focus on fast ascent</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr class="highlight">
+          <td>Hang Cleans (Hook grip) &ndash; EXPLOSIVE</td>
+          <td>5&ndash;6 &times; 2&ndash;3</td>
+          <td>X-X-X &bull; 2.5&ndash;4 min<br>Fast elbows + left triple extension</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Deadlift (moderate)</td>
+          <td>4 &times; 3&ndash;5</td>
+          <td>Controlled down, Explosive up &bull; 3&ndash;5 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Romanian DL / Good Mornings</td>
+          <td>3 &times; 6&ndash;8</td>
+          <td>3-1-X &bull; 2 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Power Asymmetry Drill (single-leg box jumps or split-stance med ball slams)</td>
+          <td>3 &times; 5 each side</td>
+          <td>Explosive &bull; 1&ndash;2 min</td>
+          <td>BW or light</td>
+          <td><input type="number" placeholder="reps"></td>
+          <td>&mdash;</td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Core</td>
+          <td>3 sets</td>
+          <td>&mdash; &bull; 1&ndash;2 min</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+      </tbody>
     </table>
     <div style="margin-top: 18px; text-align: right;">
-      <button type="button" onclick="alert('Day 1 logged! Great job finishing the session. Keep working on left-side power.')">Mark Day 1 Complete</button>
+      <button type="button" onclick="markComplete('W1D1')">Mark Day 1 Complete</button>
     </div>
   </section>
 
   <section class="section box">
-    <h2>Week 1 – Day 2: Bench Focus</h2>
+    <h2>Week 1 &ndash; Day 2: Bench Focus</h2>
     <table>
-      <tr>
-        <th>Exercise</th>
-        <th>Sets × Reps</th>
-        <th>Tempo & Rest</th>
-        <th>Weight (lbs)</th>
-        <th>Reps Done</th>
-        <th>RPE</th>
-        <th>Notes</th>
-      </tr>
-      <tr>
-        <td>Bench Press</td>
-        <td>4-5 × 3-5</td>
-        <td>2-0-X • 2-4 min</td>
-        <td><input type="number" placeholder="lbs"></td>
-        <td><input type="number" placeholder="reps"></td>
-        <td><input type="number" min="1" max="10" placeholder="RPE"></td>
-        <td><input type="text" placeholder="notes"></td>
-      </tr>
-      <tr>
-        <td>Close-Grip or Pause Bench</td>
-        <td>3 × 5-6</td>
-        <td>2-1-1 • 2-3 min</td>
-        <td><input type="number" placeholder="lbs"></td>
-        <td><input type="number" placeholder="reps"></td>
-        <td><input type="number" min="1" max="10" placeholder="RPE"></td>
-        <td><input type="text" placeholder="notes"></td>
-      </tr>
-      <tr>
-        <td>Overhead Press or Triceps</td>
-        <td>3 × 8-10</td>
-        <td>Controlled • 1.5-2 min</td>
-        <td><input type="number" placeholder="lbs"></td>
-        <td><input type="number" placeholder="reps"></td>
-        <td><input type="number" min="1" max="10" placeholder="RPE"></td>
-        <td><input type="text" placeholder="notes"></td>
-      </tr>
-      <tr>
-        <td>Rows</td>
-        <td>3-4 × 8-10</td>
-        <td>2-1-X • 1.5-2 min</td>
-        <td><input type="number" placeholder="lbs"></td>
-        <td><input type="number" placeholder="reps"></td>
-        <td><input type="number" min="1" max="10" placeholder="RPE"></td>
-        <td><input type="text" placeholder="notes"></td>
-      </tr>
+      <thead>
+        <tr>
+          <th>Exercise</th>
+          <th>Sets &times; Reps</th>
+          <th>Tempo &amp; Rest</th>
+          <th>Weight (lbs)</th>
+          <th>Reps Done</th>
+          <th>RPE</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bench Press</td>
+          <td>4&ndash;5 &times; 3&ndash;5</td>
+          <td>2-0-X &bull; 2&ndash;4 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Close-Grip or Pause Bench</td>
+          <td>3 &times; 5&ndash;6</td>
+          <td>2-1-1 &bull; 2&ndash;3 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Overhead Press or Triceps</td>
+          <td>3 &times; 8&ndash;10</td>
+          <td>Controlled &bull; 1.5&ndash;2 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Rows</td>
+          <td>3&ndash;4 &times; 8&ndash;10</td>
+          <td>2-1-X &bull; 1.5&ndash;2 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Wrist Flexor/Extensor Work (right wrist care)</td>
+          <td>3 &times; 15</td>
+          <td>Slow &bull; 1 min</td>
+          <td>Band or cable</td>
+          <td><input type="number" placeholder="reps"></td>
+          <td>&mdash;</td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+      </tbody>
     </table>
+    <div style="margin-top: 18px; text-align: right;">
+      <button type="button" onclick="markComplete('W1D2')">Mark Day 2 Complete</button>
+    </div>
   </section>
 
   <section class="section box">
-    <h2>Week 1 – Day 3: Full Body</h2>
+    <h2>Week 1 &ndash; Day 3: Full Body + Clean Technique</h2>
     <table>
-      <tr>
-        <th>Exercise</th>
-        <th>Sets × Reps</th>
-        <th>Tempo & Rest</th>
-        <th>Weight (lbs)</th>
-        <th>Reps Done</th>
-        <th>RPE</th>
-        <th>Notes</th>
-      </tr>
-      <tr>
-        <td>Bench Variation</td>
-        <td>4 × 4-6</td>
-        <td>2-1-X • 2-3 min</td>
-        <td><input type="number" placeholder="lbs"></td>
-        <td><input type="number" placeholder="reps"></td>
-        <td><input type="number" min="1" max="10" placeholder="RPE"></td>
-        <td><input type="text" placeholder="notes"></td>
-      </tr>
-      <tr>
-        <td>Hang Cleans (Hook grip)</td>
-        <td>4-5 × 2</td>
-        <td>X-X-X • 2.5-4 min</td>
-        <td><input type="number" placeholder="lbs"></td>
-        <td><input type="number" placeholder="reps"></td>
-        <td><input type="number" min="1" max="10" placeholder="RPE"></td>
-        <td><input type="text" placeholder="notes"></td>
-      </tr>
-      <tr>
-        <td>Pull-ups or Lat Pulldowns</td>
-        <td>3-4 × 6-10</td>
-        <td>2-1-X • 1.5-2 min</td>
-        <td><input type="number" placeholder="lbs"></td>
-        <td><input type="number" placeholder="reps"></td>
-        <td><input type="number" min="1" max="10" placeholder="RPE"></td>
-        <td><input type="text" placeholder="notes"></td>
-      </tr>
+      <thead>
+        <tr>
+          <th>Exercise</th>
+          <th>Sets &times; Reps</th>
+          <th>Tempo &amp; Rest</th>
+          <th>Weight (lbs)</th>
+          <th>Reps Done</th>
+          <th>RPE</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight">
+          <td>Wrist Mobility Warm-up</td>
+          <td>1 set</td>
+          <td>5 min</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td><input type="text" placeholder="session notes"></td>
+        </tr>
+        <tr>
+          <td>Bench Variation (Incline or Close-Grip)</td>
+          <td>4 &times; 4&ndash;6</td>
+          <td>2-1-X &bull; 2&ndash;3 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr class="highlight">
+          <td>Hang Cleans (Hook grip) &ndash; Technique focus</td>
+          <td>4&ndash;5 &times; 2</td>
+          <td>X-X-X &bull; 2.5&ndash;4 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="Film for review"></td>
+        </tr>
+        <tr>
+          <td>Pull-ups or Lat Pulldowns</td>
+          <td>3&ndash;4 &times; 6&ndash;10</td>
+          <td>2-1-X &bull; 1.5&ndash;2 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Leg Press or Split Squat</td>
+          <td>3 &times; 8&ndash;10</td>
+          <td>2-0-X &bull; 2 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Core / Carries</td>
+          <td>3 sets</td>
+          <td>&mdash; &bull; 1&ndash;2 min</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+      </tbody>
     </table>
+    <div style="margin-top: 18px; text-align: right;">
+      <button type="button" onclick="markComplete('W1D3')">Mark Day 3 Complete</button>
+    </div>
+  </section>
+
+  <!-- WEEK 2 -->
+  <div class="week-header">
+    <h2>Week 2 &ndash; Intensity Building</h2>
+    <p>Focus: Increase load, reduce reps, sharpen competition movements. Intensity ~78&ndash;88% 1RM.</p>
+  </div>
+
+  <section class="section box">
+    <h2>Week 2 &ndash; Day 1: Lower + Heavy Cleans</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Exercise</th>
+          <th>Sets &times; Reps</th>
+          <th>Tempo &amp; Rest</th>
+          <th>Weight (lbs)</th>
+          <th>Reps Done</th>
+          <th>RPE</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight">
+          <td>Wrist Mobility Warm-up</td>
+          <td>1 set</td>
+          <td>5&ndash;8 min</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td><input type="text" placeholder="session notes"></td>
+        </tr>
+        <tr class="highlight">
+          <td>Front Squat (Cross-arm grip)</td>
+          <td>4 &times; 3&ndash;4</td>
+          <td>2-1-X &bull; 3 min<br>~80&ndash;85% effort</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr class="highlight">
+          <td>Hang Cleans (Hook grip) &ndash; Heavy Singles/Doubles</td>
+          <td>5 &times; 1&ndash;2</td>
+          <td>X-X-X &bull; 3&ndash;5 min<br>Build to near-max</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Deadlift &ndash; Intensity Sets</td>
+          <td>4 &times; 2&ndash;3</td>
+          <td>Explosive up &bull; 4&ndash;5 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Romanian DL</td>
+          <td>3 &times; 5</td>
+          <td>3-1-X &bull; 2 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Core</td>
+          <td>2&ndash;3 sets</td>
+          <td>&mdash; &bull; 1&ndash;2 min</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="margin-top: 18px; text-align: right;">
+      <button type="button" onclick="markComplete('W2D1')">Mark Day 1 Complete</button>
+    </div>
   </section>
 
   <section class="section box">
-    <h2>Competition Day – May 30</h2>
+    <h2>Week 2 &ndash; Day 2: Bench Peak</h2>
     <table>
-      <tr>
-        <th>Lift</th>
-        <th>Opener</th>
-        <th>2nd</th>
-        <th>3rd (PR)</th>
-      </tr>
-      <tr>
-        <td>Clean</td>
-        <td><input type="text" placeholder="lbs"></td>
-        <td><input type="text" placeholder="lbs"></td>
-        <td><input type="text" placeholder="lbs"></td>
-      </tr>
-      <tr>
-        <td>Bench</td>
-        <td><input type="text" placeholder="lbs"></td>
-        <td><input type="text" placeholder="lbs"></td>
-        <td><input type="text" placeholder="lbs"></td>
-      </tr>
-      <tr>
-        <td>Deadlift</td>
-        <td><input type="text" placeholder="lbs"></td>
-        <td><input type="text" placeholder="lbs"></td>
-        <td><input type="text" placeholder="lbs"></td>
-      </tr>
+      <thead>
+        <tr>
+          <th>Exercise</th>
+          <th>Sets &times; Reps</th>
+          <th>Tempo &amp; Rest</th>
+          <th>Weight (lbs)</th>
+          <th>Reps Done</th>
+          <th>RPE</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bench Press &ndash; Heavy Sets</td>
+          <td>4&ndash;5 &times; 2&ndash;3</td>
+          <td>2-0-X &bull; 3&ndash;4 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Close-Grip Bench</td>
+          <td>3 &times; 4&ndash;5</td>
+          <td>2-1-1 &bull; 2&ndash;3 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Overhead Press</td>
+          <td>3 &times; 6&ndash;8</td>
+          <td>Controlled &bull; 2 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Rows / Face Pulls</td>
+          <td>3 &times; 10&ndash;12</td>
+          <td>2-1-X &bull; 1.5 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Wrist / Forearm Prehab (right wrist)</td>
+          <td>2 &times; 15</td>
+          <td>Slow &bull; 1 min</td>
+          <td>Band/cable</td>
+          <td><input type="number" placeholder="reps"></td>
+          <td>&mdash;</td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+      </tbody>
     </table>
+    <div style="margin-top: 18px; text-align: right;">
+      <button type="button" onclick="markComplete('W2D2')">Mark Day 2 Complete</button>
+    </div>
+  </section>
+
+  <section class="section box">
+    <h2>Week 2 &ndash; Day 3: Full Body / Accessory Flush</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Exercise</th>
+          <th>Sets &times; Reps</th>
+          <th>Tempo &amp; Rest</th>
+          <th>Weight (lbs)</th>
+          <th>Reps Done</th>
+          <th>RPE</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight">
+          <td>Wrist Mobility Warm-up</td>
+          <td>1 set</td>
+          <td>5 min</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td><input type="text" placeholder="session notes"></td>
+        </tr>
+        <tr class="highlight">
+          <td>Hang Clean (Hook grip) &ndash; Speed/Technique</td>
+          <td>4 &times; 2</td>
+          <td>X-X-X &bull; 3 min<br>~70%, feel explosive</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Bench Light (Speed Reps)</td>
+          <td>5 &times; 3</td>
+          <td>0-0-X &bull; 2 min<br>~60&ndash;65%, explosive</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Pull-ups or Cable Rows</td>
+          <td>3 &times; 8</td>
+          <td>2-1-X &bull; 1.5 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Leg Accessory (GHR, Nordic Curl, or Leg Curl)</td>
+          <td>3 &times; 8&ndash;10</td>
+          <td>3-1-1 &bull; 1.5 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Core / Mobility</td>
+          <td>2&ndash;3 sets</td>
+          <td>&mdash; &bull; 1&ndash;2 min</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="margin-top: 18px; text-align: right;">
+      <button type="button" onclick="markComplete('W2D3')">Mark Day 3 Complete</button>
+    </div>
+  </section>
+
+  <!-- WEEK 3 -->
+  <div class="week-header">
+    <h2>Week 3 &ndash; Peak &amp; Taper</h2>
+    <p>Focus: Opener practice, CNS activation, reduce volume. Stay fresh. Intensity ~85&ndash;92% max. Rest 48+ hrs before competition.</p>
+  </div>
+
+  <section class="section box">
+    <h2>Week 3 &ndash; Day 1: Opener Practice</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Exercise</th>
+          <th>Sets &times; Reps</th>
+          <th>Tempo &amp; Rest</th>
+          <th>Weight (lbs)</th>
+          <th>Reps Done</th>
+          <th>RPE</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight">
+          <td>Wrist Mobility Warm-up</td>
+          <td>1 set</td>
+          <td>5&ndash;8 min</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td><input type="text" placeholder="session notes"></td>
+        </tr>
+        <tr class="highlight">
+          <td>Clean &ndash; Opener Weight (Hook grip)</td>
+          <td>2&ndash;3 &times; 1</td>
+          <td>Full rest 5 min<br>Competition conditions</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Bench Press &ndash; Opener Weight</td>
+          <td>2&ndash;3 &times; 1</td>
+          <td>Full rest 5 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Deadlift &ndash; Opener Weight</td>
+          <td>2 &times; 1</td>
+          <td>Full rest 5 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Light Accessory (optional)</td>
+          <td>2 sets</td>
+          <td>Easy &bull; 1&ndash;2 min</td>
+          <td>Light</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="margin-top: 18px; text-align: right;">
+      <button type="button" onclick="markComplete('W3D1')">Mark Day 1 Complete</button>
+    </div>
+  </section>
+
+  <section class="section box">
+    <h2>Week 3 &ndash; Day 2: Final Movement Practice</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Exercise</th>
+          <th>Sets &times; Reps</th>
+          <th>Tempo &amp; Rest</th>
+          <th>Weight (lbs)</th>
+          <th>Reps Done</th>
+          <th>RPE</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight">
+          <td>Wrist Mobility Warm-up</td>
+          <td>1 set</td>
+          <td>5&ndash;8 min</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td><input type="text" placeholder="session notes"></td>
+        </tr>
+        <tr class="highlight">
+          <td>Clean &ndash; Light Speed Work (Hook grip)</td>
+          <td>3 &times; 2</td>
+          <td>Full rest 4 min<br>~70%, feel explosive</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Bench &ndash; Light Speed Reps</td>
+          <td>3 &times; 3</td>
+          <td>~60%, explosive &bull; 3 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Deadlift &ndash; Light Touch &amp; Go</td>
+          <td>2 &times; 2</td>
+          <td>~60&ndash;65% &bull; 3 min</td>
+          <td><input type="number" placeholder="lbs"></td>
+          <td><input type="number" placeholder="reps"></td>
+          <td><input type="number" min="1" max="10" placeholder="RPE"></td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+        <tr>
+          <td>Stretch / Mobility / Recovery</td>
+          <td>10&ndash;15 min</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td><input type="text" placeholder="notes"></td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="margin-top: 18px; text-align: right;">
+      <button type="button" onclick="markComplete('W3D2')">Mark Day 2 Complete</button>
+    </div>
+  </section>
+
+  <!-- COMPETITION DAY -->
+  <div class="week-header">
+    <h2>Competition Day &ndash; May 30</h2>
+    <p>Plan your attempts. Log results. Trust the prep.</p>
+  </div>
+
+  <section class="section box">
+    <h2>May 30 &ndash; Attempt Planner</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Lift</th>
+          <th>Opener (~88&ndash;90% 1RM)</th>
+          <th>2nd Attempt (~95&ndash;97% 1RM)</th>
+          <th>3rd Attempt (PR Shot)</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight">
+          <td>Clean</td>
+          <td><input type="text" placeholder="lbs"></td>
+          <td><input type="text" placeholder="lbs"></td>
+          <td><input type="text" placeholder="lbs"></td>
+          <td><input type="text" placeholder="Good / Miss"></td>
+        </tr>
+        <tr>
+          <td>Bench</td>
+          <td><input type="text" placeholder="lbs"></td>
+          <td><input type="text" placeholder="lbs"></td>
+          <td><input type="text" placeholder="lbs"></td>
+          <td><input type="text" placeholder="Good / Miss"></td>
+        </tr>
+        <tr class="highlight">
+          <td>Deadlift</td>
+          <td><input type="text" placeholder="lbs"></td>
+          <td><input type="text" placeholder="lbs"></td>
+          <td><input type="text" placeholder="lbs"></td>
+          <td><input type="text" placeholder="Good / Miss"></td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="margin-top: 18px; text-align: right;">
+      <button type="button" onclick="markComplete('COMP')">Mark Competition Complete</button>
+    </div>
   </section>
 
   <section class="section note">
-    <p><strong>Today's Note:</strong> 115 lbs Front Squat is solid. Next time focus on driving through the left leg harder for faster ascent. Film cleans from the front and side.</p>
+    <strong>Competition Day Reminders:</strong>
+    <p>
+      &bull; Hook grip on ALL cleans &mdash; tape thumbs if needed<br>
+      &bull; Right wrist wrap on the catch if sore &mdash; aim for a soft landing<br>
+      &bull; Left leg &mdash; drive through the floor, full triple extension every rep<br>
+      &bull; Eat carbs the night before, light breakfast, hydrate well<br>
+      &bull; Opener should be an automatic make &mdash; save the PRs for 2nd and 3rd
+    </p>
   </section>
 </main>
 <script>
@@ -493,10 +945,25 @@ function calculate() {
   document.getElementById('result').textContent = Math.round(oneRM * percent) + ' lbs';
 }
 
+function markComplete(dayId) {
+  const messages = {
+    W1D1: 'Week 1 Day 1 logged! Great foundation. Keep working on left-side power and hook grip.',
+    W1D2: 'Week 1 Day 2 logged! Good bench work. Keep your wrist healthy.',
+    W1D3: 'Week 1 Day 3 logged! Film your cleans for review — technique before load.',
+    W2D1: 'Week 2 Day 1 logged! Strong lower day. Recovery is key now — sleep and eat well.',
+    W2D2: 'Week 2 Day 2 logged! Bench is climbing. Rest up for the final push.',
+    W2D3: 'Week 2 Day 3 logged! Looking sharp. One week out — stay focused.',
+    W3D1: "Week 3 Day 1 logged! Openers felt good? Trust the process — you're ready.",
+    W3D2: 'Week 3 Day 2 logged! Final prep done. Rest, eat, and get excited for May 30!',
+    COMP: 'Competition complete! Amazing work. Log your results and celebrate.',
+  };
+  alert(messages[dayId] || 'Day logged!');
+}
+
 const fields = Array.from(document.querySelectorAll('input, select, textarea'));
 
 function storageKey(element) {
-  return `may30-tracker-${element.tagName.toLowerCase()}-${fields.indexOf(element)}`;
+  return `may30-3wk-${element.tagName.toLowerCase()}-${fields.indexOf(element)}`;
 }
 
 function saveField(element) {
